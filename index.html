@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Я уже сайт зделал что бы ты купил салфетки</title>
+  <title>ЧЕ ТАМ</title>
 
   <!-- Подключаем шрифт Metal Mania -->
   <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
@@ -27,7 +27,15 @@
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-
+    button {
+      font-size: 25px;      
+      padding: 10px 20px;
+      background-color: #0078ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
     /* Анимация лёгкого пульса */
     @keyframes pulse {
       0% { text-shadow: 4px 4px 10px black, 0 0 20px red; }
@@ -42,6 +50,18 @@
 </head>
 
 <body>
-  <h1>Дон купи уже эту ебаную бумагу!</h1>
+  <h1>ЧЕ ТАМ ?</h1>
+  <button onclick="document.getElementById('popup').style.display='block'">
+  Нажми сюда
+</button>
+  <div id="popup" style="display:none;
+                       background-color:#111;  
+                       padding:20px;
+                       width:250px;
+                       font-size:24px;
+                       margin:20px auto;
+                       text-align:center;">
+  Ехала ?
+</div>
 </body>
 </html>
